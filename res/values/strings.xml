@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Citrus Hack</string>
+    <string name="app_name">Siren++</string>
+    <string name="Activate_Siren">Activate Siren</string>
+    <color name = "white">#FFFFFF</color>
+    <color name = "blue"> #0A3E85</color>
+    <color name = "red1">#FF0000</color>
+    <color name = "red2">#FF4040</color>
+    <color name = "grey">#717171</color>
+    <string name = "thanks">Thank you for beginning the registration process! An email has been sent to the email address provided. Please confirm in order to finish registering.</string>
+    <string name = "MainScreen"> Main Screen </string>
+    <string name = "RegisterButton">Register</string>
+    <string name = "enterName"> \ \ Enter first and last name</string>
+    <string name ="email">\ \ Enter email</string>
+    <string name ="license">\ \ Enter registration code</string>
+    <string name="submit">Submit</string>
+    <color name = "black">#000000</color>
 </resources>

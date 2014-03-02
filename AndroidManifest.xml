@@ -3,11 +3,15 @@
           package="com.Citrus_Hack"
           android:versionCode="1"
           android:versionName="1.0">
-    <uses-sdk android:minSdkVersion="11"/>
+    <uses-sdk android:minSdkVersion="14"/>
     <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 
-    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
+    <application android:label="@string/app_name" android:icon="@drawable/sirenicon">
         <activity android:name="CitrusHack"
                   android:label="@string/app_name">
             <intent-filter>
@@ -15,6 +19,29 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <activity android:label="@string/app_name" android:name=".AppActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".App2Activity" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".App3Activity" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".App4Activity" android:label="Siren++"/>
 
         <receiver android:name="com.Citrus_Hack.OutgoingCallReceiver" >
             <intent-filter>
@@ -26,7 +53,17 @@
         <service android:name="com.Citrus_Hack.RunningService"></service>
 
         <activity
-                android:name=".FragmentLaunchDialog"
+            android:name=".FragmentLaunchDialog"
+            android:label="@string/app_name" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+        <activity
+                android:name=".SendGPS"
                 android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
